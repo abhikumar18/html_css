@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Complete Website Design Using HTML and CSS</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+
+    <body>
+         <section id="header">
+               <div class="container">
+                    <img src="images/logo.png" class="logo">
+                    <div class="header-text">
+                        <h1>The Purpose is to<br> teach, bring learning
+                            to people
+                        </h1>
+                        <span class="square"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                           adipisicing elit. Autem optio magnam, 
+                           rerum ipsa aliquam iure voluptates eius
+                           accusamus mollitia cum, fuga placeat nihil 
+                           provident sint doloremque neque alias asperiores
+                           quae!
+                        </p>
+                        <button class="common-btn">
+                          Read More
+                        </button>
+                        <div class="line">
+                            <span class="line-1"></span><br>
+                            <span class="line-2"></span><br>
+                            <span class="line-3"></span>
+                        </div>
+                    </div>
+               </div>
+         </section>
+         <nav id="sideNav">
+         <ul>
+             <li><a href="">HOME</a></li>
+             <li><a href="">ABOUT US</a></li>
+             <li><a href="">FEATURES</a></li>
+             <li><a href="">COURSES</a></li>
+             <li><a href="">OFFER</a></li>
+             <li><a href="">CONTACT</a></li>
+         </ul>
+         </nav>
+         <img src="./images/menu.png" id="menuBtn" onclick="menuButton()">
+<!--about-->
+<section id="about">
+    <div class="about-left-col">
+        <img src="./images/about.png">
+    </div>
+    <div class="about-right-col">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <span class="square"></span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facere voluptatum enim
+                fugiat at, autem mollitia odit. 
+                Recusandae nostrum voluptas assumenda
+                atque tenetur reiciendis, fuga esse 
+                exercitationem tempore consequatur, 
+                non dicta!
+            </p>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div><br>
+            <h2>
+                "Learning is not attained by chance, it must be
+                 sought for with ardor and attended to with diligence"
+            </h2>
+            <h3>----Abigail Adams</h3>
+        </div>
+    </div>
+</section>
+
+<section id="features">
+    <div class="features-now">
+        <div class="feature-col">
+            <img src="./images/pic-1.png">
+            <h4>Learn Anywhere</h4>
+            <p>Switch between your computer,tablet
+               or mobile device</p>
+        </div>
+        <div class="feature-col">
+            <img src="./images/pic-2.png">
+            <h4>Expert Teachers</h4>
+            <p>Learn from industry experts who are passionate
+                about teaching</p>
+        </div>
+        <div class="feature-col">
+            <img src="./images/pic-3.png">
+            <h4>Unlimited Access</h4>
+            <p>Choose what you'd like to learn from our 
+                extensive subscription library.</p>
+        </div>
+    </div>
+    <div class="feature-btn">
+        <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+        <button class="common-btn">Street Free Trial</button>
+    </div>
+</section>
+
+<!--courses-->
+
+<section id="courses">
+    <div class="container course row">
+        <div class="course-left-col"></div>
+        <div class="course-right-col">
+            <img src="./images/course.png">
+        </div>
+    </div>
+</section>
+
+
+         <script>
+             var sideNav = document.getElementById("sideNav");
+             sideNav.style.right = "-250px"
+             function menuButton(){
+                 if(sideNav.style.right == "-250px")
+                 {
+                     sideNav.style.right = "0px";
+                 }
+                 else{
+                     sideNav.style.right = "-250px";
+                 }
+                 
+             }
+         </script>
+    </body>
+</html>
